@@ -1,0 +1,187 @@
+table{
+    width: 600px;
+    height: 60px;
+    background-color: #ffffff;
+    border-spacing: 10px ;
+    margin-bottom: 50px;
+}
+td:nth-child(odd){
+    background-color: yellow;
+    position: relative;
+    border: 1px solid black;
+    width: 40px;
+}
+td:nth-child(even){
+    background-color: green;
+    position: relative;
+    top:14px;
+    border: 1px solid black;
+    width: 40px;
+}
+
+/*Hide even numbers*/
+
+div table{
+    background-color: #ffffff;
+    width: 600px;
+    height: 50px;
+    margin-bottom: 0;
+}
+div tr td:nth-child(even){
+    background-color: red;
+    top:0;
+    width:50px ;
+    text-align: center;
+    display: none;
+    bottom:0;
+}
+div tr td:nth-child(odd){
+    background-color: red;
+    width: 50px;
+    text-align: center;
+    color:#ffffff;
+}
+h3{
+    margin-left: 18px;
+}
+
+/*Ex3*/
+
+.t3 td{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-spacing: 10px ;
+    margin-left: 2px;
+    border-top: 1px solid black;
+}
+.t3 td:nth-child(even){
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    padding: 2px;
+}
+/*1st row*/
+.t3 tr:first-child td:nth-child(4),
+.t3 tr:first-child td:nth-child(5),
+.t3 tr:first-child td:nth-child(6){
+   background-color: blue;
+}
+/*2nd row*/
+.t3 tr:nth-child(2) td:nth-child(1),
+.t3 tr:nth-child(2) td:nth-child(2),
+.t3 tr:nth-child(2) td:nth-child(3),
+.t3 tr:nth-child(2) td:nth-child(7),
+.t3 tr:nth-child(2) td:nth-child(8),
+.t3 tr:nth-child(2) td:nth-child(9){
+   background-color: blue;
+}
+/*3rd*/
+.t3 tr:last-child td:nth-child(4),
+.t3 tr:last-child td:nth-child(5),
+.t3 tr:last-child td:nth-child(6){
+   background-color: blue;
+}
+/*Ex4*/
+
+/*row1*/
+.box h4{
+    display: inline-block; 
+    width: 50px;          
+    height: 50px;         
+    background-color: rgb(136, 206, 238);
+    margin: 5px;           
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid black;
+}
+.box h4:nth-child(n+6){
+    background-color: orange;
+}
+/*row2*/
+.box h5{
+    display: inline-block; 
+    width: 50px;          
+    height: 50px;         
+    background-color: rgb(136, 206, 238);
+    margin: 5px;           
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid black;
+}
+.box h5:nth-child(-n+5){
+    background-color: orange;
+}
+/*row3*/
+.box h6{
+    display: inline-block; 
+    width: 50px;          
+    height: 50px;         
+    background-color: rgb(136, 206, 238);
+    margin: 5px;           
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid black;
+}
+.box h6:nth-child(4n-3){
+    background-color: orange;
+}
+/*row4*/
+.box h7{
+    display: inline-block; 
+    width: 50px;          
+    height: 50px;         
+    background-color: rgb(136, 206, 238);
+    margin: 5px;           
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid black;
+}
+.box h7:nth-child(n+7){
+    background-color: orange;
+}
+/*row5*/
+.box h8{
+    display: inline-block; 
+    width: 50px;          
+    height: 50px;         
+    background-color: rgb(136, 206, 238);
+    margin: 5px;           
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid black;
+}
+.box h8:nth-child(n+2){
+    background-color: orange;
+}
+/*ExtraQ*/
+.boxx{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.boxx h4{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #333;
+    margin: 5px;
+    font-size: 18px;
+}
+.boxx h4:hover{
+    color:red;
+}
+.boxx h4:hover~h4:nth-child(n+1n) {
+    color:yellow; /* Yellow color for multiples of 2 when hovered */
+}
+
+.boxx h4:hover~h4:nth-child(n+2n) {
+    color: yellow; /* Yellow color for multiples of 3 when hovered */
+}
